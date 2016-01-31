@@ -1,0 +1,31 @@
+$nav-background: hsla(220, 25%, 35%, 1);
+$nav-color: hsla(220, 0%, 100%, 1);
+
+nav {
+  padding: 20px;
+  background: $nav-background;
+  color: $nav-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  a {
+    text-decoration: none;
+    color: $nav-color;
+    padding: 20px 10px;
+    transition: background 0.2s;
+    &:active, &:visited {
+      text-decoration: none;
+      color: $nav-color;
+      background: $nav-background;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $nav-color;
+      background: hsla(220, 25%, 80%, 1);
+    }
+  }
+}
+
